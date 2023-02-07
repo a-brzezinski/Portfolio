@@ -1,0 +1,66 @@
+@import '../helpers/variables';
+
+.header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+	img {
+		max-width: 100%;
+		object-fit: cover;
+		position: absolute;
+		filter: blur(15px);
+		animation: imgScale 15s infinite linear;
+	}
+
+	&__icon {
+		position: absolute;
+		bottom: 5px;
+		color: $font-color;
+		font-size: 5rem;
+	}
+}
+
+.content {
+	text-align: center;
+	color: $font-color;
+	z-index: 1;
+
+	&__heading {
+		font-size: 4rem;
+		letter-spacing: 15px;
+		font-weight: bold;
+	}
+
+	&__text {
+		margin-top: 2.5em;
+		letter-spacing: 15px;
+		font-size: 2.5rem;
+	}
+}
+
+@keyframes imgScale {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media (min-width: 768px) {
+	.content {
+		&__heading {
+			font-size: 5rem;
+		}
+	}
+}

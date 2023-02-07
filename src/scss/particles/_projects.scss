@@ -1,0 +1,71 @@
+@import '../helpers/variables';
+
+.projects {
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		flex-wrap: wrap;
+	}
+}
+
+.card {
+	width: 350px;
+	height: 600px;
+	border-radius: 30px;
+	background: lightgrey;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	&__title {
+		font-size: 3rem;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	&__wrap {
+		min-height: 350px;
+	}
+
+	&__technology {
+		text-align: center;
+		letter-spacing: 1px;
+		font-size: 2.8rem;
+		color: #444444;
+	}
+
+	&__list {
+		list-style: none;
+		text-align: center;
+	}
+
+	&__item {
+		padding: 1em;
+		font-weight: 300;
+		font-size: 2rem;
+		color: #212122;
+	}
+
+	&__buttons {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		a {
+			font-size: 2rem;
+			text-decoration: none;
+			color: black;
+			transition: 1s;
+
+			&:hover {
+				transform: scale(1.1);
+				color: #444444;
+			}
+		}
+	}
+}

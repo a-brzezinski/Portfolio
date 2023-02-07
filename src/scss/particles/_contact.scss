@@ -1,0 +1,24 @@
+@import '../helpers/variables';
+
+.contact {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+		font-size: 2.7rem;
+		font-weight: 300;
+		padding: 1.5em;
+		p {
+			color: $font-color;
+		}
+
+		i {
+			margin-right: 0.5em;
+			color: $font-color;
+		}
+	}
+}
